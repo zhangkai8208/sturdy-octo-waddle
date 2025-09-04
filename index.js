@@ -27,7 +27,7 @@ const makeCommits = (n) => {
   const data = { date: date };
   console.log(date);
   
-  jsonfile.writeFile(path, data, () = > {
+  jsonfile.writeFile(path, data, () => {
     simpleGit()
       .pull("origin", "main")
       .then(() => {
